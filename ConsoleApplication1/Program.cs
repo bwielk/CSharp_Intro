@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
@@ -13,6 +9,11 @@ namespace ConsoleApplication1
             Console.WriteLine("Hello, it's my first code in C#");
             Console.ReadLine();
             Console.Write("and here's more text following the command");
+            Console.ReadLine();
+            Console.Write("Click enter twice to close the app");
+            Console.ReadLine();
+            Employee employee = new ConsoleApplication1.Employee("Adam", 23, "D");
+            Console.WriteLine(employee.DisplayDetails());
             Console.ReadLine();
         }
     }
