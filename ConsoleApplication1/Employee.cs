@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace ConsoleApplication1
 {
@@ -18,6 +19,25 @@ namespace ConsoleApplication1
         public String DisplayDetails()
         {
             return "NAME : " + this.name + " AGE : " + this.age + " GRADE : " + grade;
+        }
+
+        public String Name
+        {
+            get
+            {
+                return this.name.ToUpper();
+            }
+            set
+            {
+                if (value.Any(ch => Char.IsDigit(ch)))
+                {
+                    Console.WriteLine("Name cannot have digits in it");
+                    return;
+                }else
+                {
+                    name = value;
+                }
+            }
         }
     }
 }

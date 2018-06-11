@@ -14,6 +14,9 @@ namespace ConsoleApplication1
             Console.ReadLine();
             Employee employee = new ConsoleApplication1.Employee("Adam", 23, "D");
             Console.WriteLine(employee.DisplayDetails());
+            Console.WriteLine(employee.Name = "John");
+            Console.WriteLine(employee.DisplayDetails());
+            Console.WriteLine(employee.Name = "John4");
             Console.ReadLine();
         }
     }
